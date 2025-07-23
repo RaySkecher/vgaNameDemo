@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed Jul 23 12:36:51 2025
+# Process ID         : 92855
+# Current directory  : /home/zimengx/RaySketchers/basys3IODemo/hw.runs/impl_1
+# Command line       : vivado -log GPIO_demo.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source GPIO_demo.tcl -notrace
+# Log file           : /home/zimengx/RaySketchers/basys3IODemo/hw.runs/impl_1/GPIO_demo.vdi
+# Journal file       : /home/zimengx/RaySketchers/basys3IODemo/hw.runs/impl_1/vivado.jou
+# Running On         : zx970
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz
+# CPU Frequency      : 3800.446 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16702 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 18849 MB
+# Available Virtual  : 12755 MB
+#-----------------------------------------------------------
+source GPIO_demo.tcl -notrace

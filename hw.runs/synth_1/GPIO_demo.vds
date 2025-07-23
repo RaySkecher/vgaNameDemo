@@ -1,0 +1,370 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed Jul 23 13:29:26 2025
+# Process ID         : 183628
+# Current directory  : /home/zimengx/RaySketchers/basys3IODemo/hw.runs/synth_1
+# Command line       : vivado -log GPIO_demo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source GPIO_demo.tcl
+# Log file           : /home/zimengx/RaySketchers/basys3IODemo/hw.runs/synth_1/GPIO_demo.vds
+# Journal file       : /home/zimengx/RaySketchers/basys3IODemo/hw.runs/synth_1/vivado.jou
+# Running On         : zx970
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz
+# CPU Frequency      : 3699.989 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16702 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 18849 MB
+# Available Virtual  : 10963 MB
+#-----------------------------------------------------------
+source GPIO_demo.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1498.637 ; gain = 73.836 ; free physical = 2632 ; free virtual = 10103
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/zimengx/repo'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/zimengx/Xilinx/Vivado/2024.2/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental /home/zimengx/RaySketchers/basys3IODemo/hw.srcs/utils_1/imports/synth_1/GPIO_demo.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/zimengx/RaySketchers/basys3IODemo/hw.srcs/utils_1/imports/synth_1/GPIO_demo.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top GPIO_demo -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 183755
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2107.633 ; gain = 428.832 ; free physical = 1799 ; free virtual = 9271
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'GPIO_demo' [/home/zimengx/RaySketchers/basys3IODemo/hw.srcs/sources_1/imports/hdl/GPIO_Demo.vhd:71]
+	Parameter DEBNC_CLOCKS bound to: 65536 - type: integer 
+	Parameter PORT_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'debouncer' declared at '/home/zimengx/RaySketchers/basys3IODemo/hw.srcs/sources_1/imports/hdl/debouncer.vhd:42' bound to instance 'Inst_btn_debounce' of component 'debouncer' [/home/zimengx/RaySketchers/basys3IODemo/hw.srcs/sources_1/imports/hdl/GPIO_Demo.vhd:320]
+INFO: [Synth 8-638] synthesizing module 'debouncer' [/home/zimengx/RaySketchers/basys3IODemo/hw.srcs/sources_1/imports/hdl/debouncer.vhd:50]
+	Parameter DEBNC_CLOCKS bound to: 65536 - type: integer 
+	Parameter PORT_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'debouncer' (0#1) [/home/zimengx/RaySketchers/basys3IODemo/hw.srcs/sources_1/imports/hdl/debouncer.vhd:50]
+INFO: [Synth 8-3491] module 'UART_TX_CTRL' declared at '/home/zimengx/RaySketchers/basys3IODemo/hw.srcs/sources_1/imports/hdl/UART_TX_CTRL.vhd:42' bound to instance 'Inst_UART_TX_CTRL' of component 'UART_TX_CTRL' [/home/zimengx/RaySketchers/basys3IODemo/hw.srcs/sources_1/imports/hdl/GPIO_Demo.vhd:449]
+INFO: [Synth 8-638] synthesizing module 'UART_TX_CTRL' [/home/zimengx/RaySketchers/basys3IODemo/hw.srcs/sources_1/imports/hdl/UART_TX_CTRL.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'UART_TX_CTRL' (0#1) [/home/zimengx/RaySketchers/basys3IODemo/hw.srcs/sources_1/imports/hdl/UART_TX_CTRL.vhd:50]
+INFO: [Synth 8-3491] module 'vga_ctrl' declared at '/home/zimengx/RaySketchers/basys3IODemo/hw.srcs/sources_1/imports/hdl/vga_ctrl.vhd:27' bound to instance 'Inst_vga_ctrl' of component 'vga_ctrl' [/home/zimengx/RaySketchers/basys3IODemo/hw.srcs/sources_1/imports/hdl/GPIO_Demo.vhd:464]
+INFO: [Synth 8-638] synthesizing module 'vga_ctrl' [/home/zimengx/RaySketchers/basys3IODemo/hw.srcs/sources_1/imports/hdl/vga_ctrl.vhd:37]
+INFO: [Synth 8-3491] module 'clk_wiz_0' declared at '/home/zimengx/RaySketchers/basys3IODemo/hw.srcs/sources_1/imports/hdl/clk_wiz_0.vhd:74' bound to instance 'clk_wiz_0_inst' of component 'clk_wiz_0' [/home/zimengx/RaySketchers/basys3IODemo/hw.srcs/sources_1/imports/hdl/vga_ctrl.vhd:140]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [/home/zimengx/RaySketchers/basys3IODemo/hw.srcs/sources_1/imports/hdl/clk_wiz_0.vhd:83]
+INFO: [Synth 8-3491] module 'clk_wiz_0_clk_wiz' declared at '/home/zimengx/RaySketchers/basys3IODemo/hw.srcs/sources_1/imports/hdl/clk_wiz_0_clk_wiz.vhd:74' bound to instance 'U0' of component 'clk_wiz_0_clk_wiz' [/home/zimengx/RaySketchers/basys3IODemo/hw.srcs/sources_1/imports/hdl/clk_wiz_0.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0_clk_wiz' [/home/zimengx/RaySketchers/basys3IODemo/hw.srcs/sources_1/imports/hdl/clk_wiz_0_clk_wiz.vhd:83]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.125000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 9.375000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT4_CASCADE bound to: 0 - type: bool 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: double 
+	Parameter STARTUP_WAIT bound to: 0 - type: bool 
+INFO: [Synth 8-113] binding component instance 'mmcm_adv_inst' to cell 'MMCME2_ADV' [/home/zimengx/RaySketchers/basys3IODemo/hw.srcs/sources_1/imports/hdl/clk_wiz_0_clk_wiz.vhd:125]
+INFO: [Synth 8-113] binding component instance 'clkf_buf' to cell 'BUFG' [/home/zimengx/RaySketchers/basys3IODemo/hw.srcs/sources_1/imports/hdl/clk_wiz_0_clk_wiz.vhd:187]
+INFO: [Synth 8-113] binding component instance 'clkout1_buf' to cell 'BUFG' [/home/zimengx/RaySketchers/basys3IODemo/hw.srcs/sources_1/imports/hdl/clk_wiz_0_clk_wiz.vhd:194]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0_clk_wiz' (0#1) [/home/zimengx/RaySketchers/basys3IODemo/hw.srcs/sources_1/imports/hdl/clk_wiz_0_clk_wiz.vhd:83]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (0#1) [/home/zimengx/RaySketchers/basys3IODemo/hw.srcs/sources_1/imports/hdl/clk_wiz_0.vhd:83]
+INFO: [Synth 8-226] default block is never used [/home/zimengx/RaySketchers/basys3IODemo/hw.srcs/sources_1/imports/hdl/vga_ctrl.vhd:168]
+INFO: [Synth 8-256] done synthesizing module 'vga_ctrl' (0#1) [/home/zimengx/RaySketchers/basys3IODemo/hw.srcs/sources_1/imports/hdl/vga_ctrl.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'GPIO_demo' (0#1) [/home/zimengx/RaySketchers/basys3IODemo/hw.srcs/sources_1/imports/hdl/GPIO_Demo.vhd:71]
+WARNING: [Synth 8-7129] Port PS2_CLK in module GPIO_demo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PS2_DATA in module GPIO_demo is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2186.570 ; gain = 507.770 ; free physical = 1704 ; free virtual = 9179
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2204.383 ; gain = 525.582 ; free physical = 1707 ; free virtual = 9182
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2204.383 ; gain = 525.582 ; free physical = 1707 ; free virtual = 9182
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2210.320 ; gain = 0.000 ; free physical = 1700 ; free virtual = 9175
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/zimengx/RaySketchers/basys3IODemo/hw.srcs/constrs_1/imports/constraints/Basys3_Master.xdc]
+Finished Parsing XDC File [/home/zimengx/RaySketchers/basys3IODemo/hw.srcs/constrs_1/imports/constraints/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/zimengx/RaySketchers/basys3IODemo/hw.srcs/constrs_1/imports/constraints/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/GPIO_demo_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/GPIO_demo_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2355.133 ; gain = 0.000 ; free physical = 1706 ; free virtual = 9185
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2355.133 ; gain = 0.000 ; free physical = 1706 ; free virtual = 9185
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2355.133 ; gain = 676.332 ; free physical = 1744 ; free virtual = 9220
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2363.137 ; gain = 684.336 ; free physical = 1744 ; free virtual = 9220
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2363.137 ; gain = 684.336 ; free physical = 1744 ; free virtual = 9220
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'txState_reg' in module 'UART_TX_CTRL'
+WARNING: [Synth 8-6040] Register angle_counter_reg_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-6040] Register angle_counter_reg_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+INFO: [Synth 8-802] inferred FSM for state register 'uartState_reg' in module 'GPIO_demo'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                     rdy |                               00 |                               00
+                load_bit |                               01 |                               01
+                send_bit |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'txState_reg' using encoding 'sequential' in module 'UART_TX_CTRL'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 rst_reg |                              000 |                              000
+             ld_init_str |                              001 |                              001
+               send_char |                              010 |                              010
+                 rdy_low |                              011 |                              011
+                wait_rdy |                              100 |                              100
+                wait_btn |                              101 |                              101
+              ld_btn_str |                              110 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'uartState_reg' using encoding 'sequential' in module 'GPIO_demo'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2363.137 ; gain = 684.336 ; free physical = 1753 ; free virtual = 9231
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 5     
+	   2 Input   31 Bit       Adders := 4     
+	   3 Input   14 Bit       Adders := 4     
+	   2 Input   13 Bit       Adders := 2     
+	   2 Input   12 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 4     
+	   2 Input    4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 5     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 29    
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 7     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 3     
+	   2 Input   31 Bit        Muxes := 4     
+	   3 Input   31 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 1     
+	  10 Input    8 Bit        Muxes := 3     
+	   2 Input    8 Bit        Muxes := 2     
+	   3 Input    8 Bit        Muxes := 20    
+	  10 Input    7 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 10    
+	   2 Input    6 Bit        Muxes := 10    
+	   9 Input    4 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 1     
+	   7 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 14    
+	   3 Input    1 Bit        Muxes := 1     
+	   7 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-6040] Register angle_counter_reg_rep_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-6040] Register angle_counter_reg_rep_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-7129] Port PS2_CLK in module GPIO_demo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PS2_DATA in module GPIO_demo is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2363.137 ; gain = 684.336 ; free physical = 1679 ; free virtual = 9163
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+-------------+---------------+----------------+
+|Module Name | RTL Object  | Depth x Width | Implemented As | 
++------------+-------------+---------------+----------------+
+|vga_ctrl    | SINE_LUT[0] | 256x10        | LUT            | 
+|vga_ctrl    | SINE_LUT[0] | 256x10        | LUT            | 
+|vga_ctrl    | SINE_LUT[0] | 256x10        | LUT            | 
+|vga_ctrl    | SINE_LUT[0] | 256x10        | LUT            | 
++------------+-------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 2395.137 ; gain = 716.336 ; free physical = 1641 ; free virtual = 9127
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2473.762 ; gain = 794.961 ; free physical = 1533 ; free virtual = 9032
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 2473.762 ; gain = 794.961 ; free physical = 1532 ; free virtual = 9031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 2582.574 ; gain = 903.773 ; free physical = 1428 ; free virtual = 8927
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 2582.574 ; gain = 903.773 ; free physical = 1431 ; free virtual = 8930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 2582.574 ; gain = 903.773 ; free physical = 1431 ; free virtual = 8931
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 2582.574 ; gain = 903.773 ; free physical = 1431 ; free virtual = 8931
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 2582.574 ; gain = 903.773 ; free physical = 1431 ; free virtual = 8931
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 2582.574 ; gain = 903.773 ; free physical = 1431 ; free virtual = 8931
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     3|
+|2     |CARRY4     |   313|
+|3     |LUT1       |   113|
+|4     |LUT2       |   309|
+|5     |LUT3       |   262|
+|6     |LUT4       |   276|
+|7     |LUT5       |   136|
+|8     |LUT6       |   454|
+|9     |MMCME2_ADV |     1|
+|10    |MUXF7      |    15|
+|11    |MUXF8      |     5|
+|12    |FDRE       |   323|
+|13    |FDSE       |     2|
+|14    |IBUF       |    22|
+|15    |OBUF       |    43|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 2582.574 ; gain = 903.773 ; free physical = 1431 ; free virtual = 8931
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2582.574 ; gain = 753.023 ; free physical = 1431 ; free virtual = 8931
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 2582.582 ; gain = 903.773 ; free physical = 1430 ; free virtual = 8930
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2582.582 ; gain = 0.000 ; free physical = 1485 ; free virtual = 8985
+INFO: [Netlist 29-17] Analyzing 334 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2638.602 ; gain = 0.000 ; free physical = 1569 ; free virtual = 9069
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: d566e916
+INFO: [Common 17-83] Releasing license: Synthesis
+51 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:43 . Memory (MB): peak = 2638.602 ; gain = 1127.090 ; free physical = 1569 ; free virtual = 9069
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1904.797; main = 1779.933; forked = 268.184
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3389.523; main = 2638.605; forked = 915.758
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00 . Memory (MB): peak = 2662.613 ; gain = 0.000 ; free physical = 1569 ; free virtual = 9069
+INFO: [Common 17-1381] The checkpoint '/home/zimengx/RaySketchers/basys3IODemo/hw.runs/synth_1/GPIO_demo.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file GPIO_demo_utilization_synth.rpt -pb GPIO_demo_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 23 13:30:20 2025...
