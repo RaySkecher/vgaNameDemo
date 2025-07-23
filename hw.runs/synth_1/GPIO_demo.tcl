@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "/home/zimengx/RaySketchers/basys3IODemo/hw.runs/synth_1/GPIO_demo.tcl"
+  variable script "/home/zimengx/RaySketchers/VGADisplayName/hw.runs/synth_1/GPIO_demo.tcl"
   variable category "vivado_synth"
 }
 
@@ -56,37 +56,32 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param checkpoint.writeSynthRtdsInDcp 1
-set_param xicom.use_bs_reader 1
 set_param chipscope.maxJobs 2
-set_param synth.incrementalSynthesisCache ./.Xil/Vivado-81995-zx970/incrSyn
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir /home/zimengx/RaySketchers/basys3IODemo/hw.cache/wt [current_project]
-set_property parent.project_path /home/zimengx/RaySketchers/basys3IODemo/hw.xpr [current_project]
+set_property webtalk.parent_dir /home/zimengx/RaySketchers/VGADisplayName/hw.cache/wt [current_project]
+set_property parent.project_path /home/zimengx/RaySketchers/VGADisplayName/hw.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property board_part_repo_paths {/home/zimengx/RaySketchers/basys3IODemo/hw.board} [current_project]
+set_property board_part_repo_paths {/home/zimengx/RaySketchers/VGADisplayName/hw.board} [current_project]
 set_property board_part digilentinc.com:basys3:part0:1.2 [current_project]
 set_property ip_repo_paths /home/zimengx/repo [current_project]
 update_ip_catalog
-set_property ip_output_repo /home/zimengx/RaySketchers/basys3IODemo/hw.cache/ip [current_project]
+set_property ip_output_repo /home/zimengx/RaySketchers/VGADisplayName/hw.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
-  /home/zimengx/RaySketchers/basys3IODemo/hw.srcs/sources_1/imports/hdl/UART_TX_CTRL.vhd
-  /home/zimengx/RaySketchers/basys3IODemo/hw.srcs/sources_1/imports/hdl/clk_wiz_0.vhd
-  /home/zimengx/RaySketchers/basys3IODemo/hw.srcs/sources_1/imports/hdl/clk_wiz_0_clk_wiz.vhd
-  /home/zimengx/RaySketchers/basys3IODemo/hw.srcs/sources_1/imports/hdl/debouncer.vhd
-  /home/zimengx/RaySketchers/basys3IODemo/hw.srcs/sources_1/imports/hdl/vga_ctrl.vhd
-  /home/zimengx/RaySketchers/basys3IODemo/hw.srcs/sources_1/imports/hdl/GPIO_Demo.vhd
+  /home/zimengx/RaySketchers/VGADisplayName/hw.srcs/sources_1/imports/hdl/UART_TX_CTRL.vhd
+  /home/zimengx/RaySketchers/VGADisplayName/hw.srcs/sources_1/imports/hdl/clk_wiz_0.vhd
+  /home/zimengx/RaySketchers/VGADisplayName/hw.srcs/sources_1/imports/hdl/clk_wiz_0_clk_wiz.vhd
+  /home/zimengx/RaySketchers/VGADisplayName/hw.srcs/sources_1/imports/hdl/debouncer.vhd
+  /home/zimengx/RaySketchers/VGADisplayName/hw.srcs/sources_1/imports/hdl/vga_ctrl.vhd
+  /home/zimengx/RaySketchers/VGADisplayName/hw.srcs/sources_1/imports/hdl/GPIO_Demo.vhd
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -97,12 +92,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/zimengx/RaySketchers/basys3IODemo/hw.srcs/constrs_1/imports/constraints/Basys3_Master.xdc
-set_property used_in_implementation false [get_files /home/zimengx/RaySketchers/basys3IODemo/hw.srcs/constrs_1/imports/constraints/Basys3_Master.xdc]
+read_xdc /home/zimengx/RaySketchers/VGADisplayName/hw.srcs/constrs_1/imports/constraints/Basys3_Master.xdc
+set_property used_in_implementation false [get_files /home/zimengx/RaySketchers/VGADisplayName/hw.srcs/constrs_1/imports/constraints/Basys3_Master.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental /home/zimengx/RaySketchers/basys3IODemo/hw.srcs/utils_1/imports/synth_1/GPIO_demo.dcp
+read_checkpoint -auto_incremental -incremental /home/zimengx/RaySketchers/VGADisplayName/hw.srcs/utils_1/imports/synth_1/GPIO_demo.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
-| Date             : Wed Jul 23 13:31:48 2025
+| Date             : Wed Jul 23 13:40:40 2025
 | Host             : zx970 running 64-bit Ubuntu 22.04.5 LTS
 | Command          : report_power -file GPIO_demo_power_routed.rpt -pb GPIO_demo_power_summary_routed.pb -rpx GPIO_demo_power_routed.rpx
 | Design           : GPIO_demo
@@ -52,14 +52,14 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.003 |        5 |       --- |             --- |
-| Slice Logic    |     0.008 |     2229 |       --- |             --- |
-|   LUT as Logic |     0.007 |     1299 |     20800 |            6.25 |
+| Clocks         |     0.004 |        5 |       --- |             --- |
+| Slice Logic    |     0.008 |     2237 |       --- |             --- |
+|   LUT as Logic |     0.007 |     1300 |     20800 |            6.25 |
 |   CARRY4       |    <0.001 |      313 |      8150 |            3.84 |
-|   Register     |    <0.001 |      334 |     41600 |            0.80 |
-|   F7/F8 Muxes  |    <0.001 |       20 |     32600 |            0.06 |
+|   Register     |    <0.001 |      340 |     41600 |            0.82 |
+|   F7/F8 Muxes  |    <0.001 |       21 |     32600 |            0.06 |
 |   Others       |     0.000 |       10 |       --- |             --- |
-| Signals        |     0.010 |     1754 |       --- |             --- |
+| Signals        |     0.010 |     1758 |       --- |             --- |
 | MMCM           |     0.123 |        1 |         5 |           20.00 |
 | I/O            |     0.017 |       65 |       106 |           61.32 |
 | Static Power   |     0.072 |          |           |                 |

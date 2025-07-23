@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
-| Date         : Wed Jul 23 13:31:08 2025
+| Date         : Wed Jul 23 13:39:47 2025
 | Host         : zx970 running 64-bit Ubuntu 22.04.5 LTS
 | Command      : report_control_sets -verbose -file GPIO_demo_control_sets_placed.rpt
 | Design       : GPIO_demo
@@ -58,10 +58,10 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              37 |           15 |
+| No           | No                    | No                     |              37 |           22 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |             167 |           42 |
-| Yes          | No                    | No                     |              51 |           26 |
+| No           | Yes                   | No                     |             167 |           44 |
+| Yes          | No                    | No                     |              51 |           29 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |              79 |           21 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
@@ -76,23 +76,23 @@ Table of Contents
 |  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1 | Inst_vga_ctrl/char_index_reg       |                                               |                1 |              4 |         4.00 |
 |  CLK_IBUF_BUFG                            | eqOp2_in                           | tmrVal[3]_i_1_n_0                             |                1 |              4 |         4.00 |
 |  CLK_IBUF_BUFG                            |                                    | sendStr[16][0]_i_1_n_0                        |                1 |              5 |         5.00 |
-|  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1 | Inst_vga_ctrl/is_in_text_area_reg0 |                                               |                4 |              6 |         1.50 |
+|  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1 | Inst_vga_ctrl/is_in_text_area_reg0 |                                               |                5 |              6 |         1.20 |
 |  CLK_IBUF_BUFG                            | strIndex                           |                                               |                5 |              7 |         1.40 |
 |  CLK_IBUF_BUFG                            | uartSend                           |                                               |                2 |              7 |         3.50 |
 |  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1 |                                    | Inst_vga_ctrl/eqOp                            |                3 |             11 |         3.67 |
-|  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1 |                                    | Inst_vga_ctrl/vga_red_reg[3]_i_1_n_0          |                2 |             12 |         6.00 |
+|  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1 |                                    | Inst_vga_ctrl/vga_red_reg[3]_i_1_n_0          |                4 |             12 |         3.00 |
 |  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1 | Inst_vga_ctrl/eqOp                 | Inst_vga_ctrl/v_cntr_reg                      |                3 |             12 |         4.00 |
 |  CLK_IBUF_BUFG                            |                                    | Inst_UART_TX_CTRL/bitTmr                      |                4 |             14 |         3.50 |
+|  CLK_IBUF_BUFG                            |                                    | Inst_btn_debounce/sig_cntrs_ary[1][0]_i_1_n_0 |                4 |             16 |         4.00 |
 |  CLK_IBUF_BUFG                            |                                    | Inst_btn_debounce/sig_cntrs_ary[4][0]_i_1_n_0 |                4 |             16 |         4.00 |
 |  CLK_IBUF_BUFG                            |                                    | Inst_btn_debounce/sig_cntrs_ary[3][0]_i_1_n_0 |                4 |             16 |         4.00 |
-|  CLK_IBUF_BUFG                            |                                    | Inst_btn_debounce/sig_cntrs_ary[1][0]_i_1_n_0 |                4 |             16 |         4.00 |
-|  CLK_IBUF_BUFG                            |                                    | Inst_btn_debounce/sig_cntrs_ary[0][0]_i_1_n_0 |                4 |             16 |         4.00 |
 |  CLK_IBUF_BUFG                            |                                    | Inst_btn_debounce/sig_cntrs_ary[2][0]_i_1_n_0 |                4 |             16 |         4.00 |
+|  CLK_IBUF_BUFG                            |                                    | Inst_btn_debounce/sig_cntrs_ary[0][0]_i_1_n_0 |                4 |             16 |         4.00 |
+|  CLK_IBUF_BUFG                            |                                    |                                               |               11 |             18 |         1.64 |
 |  CLK_IBUF_BUFG                            |                                    | reset_cntr0                                   |                5 |             18 |         3.60 |
-|  CLK_IBUF_BUFG                            |                                    |                                               |                8 |             18 |         2.25 |
-|  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1 |                                    |                                               |                7 |             19 |         2.71 |
+|  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1 |                                    |                                               |               11 |             19 |         1.73 |
 |  CLK_IBUF_BUFG                            |                                    | tmrCntr0                                      |                7 |             27 |         3.86 |
-|  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1 | Inst_vga_ctrl/angle_counter0       |                                               |               14 |             27 |         1.93 |
+|  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1 | Inst_vga_ctrl/angle_counter0       |                                               |               16 |             27 |         1.69 |
 |  CLK_IBUF_BUFG                            | strIndex                           | strIndex0                                     |                8 |             31 |         3.88 |
 |  CLK_IBUF_BUFG                            | Inst_UART_TX_CTRL/txBit_i_2_n_0    | Inst_UART_TX_CTRL/READY                       |                9 |             32 |         3.56 |
 +-------------------------------------------+------------------------------------+-----------------------------------------------+------------------+----------------+--------------+

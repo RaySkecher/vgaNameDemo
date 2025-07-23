@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
-| Date         : Wed Jul 23 13:31:46 2025
+| Date         : Wed Jul 23 13:40:39 2025
 | Host         : zx970 running 64-bit Ubuntu 22.04.5 LTS
 | Command      : report_methodology -file GPIO_demo_methodology_drc_routed.rpt -pb GPIO_demo_methodology_drc_routed.pb -rpx GPIO_demo_methodology_drc_routed.rpx
 | Design       : GPIO_demo
@@ -35,167 +35,167 @@ Table of Contents
 -----------------
 TIMING-16#1 Warning
 Large setup violation  
-There is a large setup violation of -17.502 ns between Inst_vga_ctrl/angle_counter_reg_rep_rep_rep[6]/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/pixel_x_orig_reg_reg[2]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -17.260 ns between Inst_vga_ctrl/angle_counter_reg_rep_rep_rep[6]_replica/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/pixel_x_orig_reg_reg[1]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#2 Warning
 Large setup violation  
-There is a large setup violation of -17.517 ns between Inst_vga_ctrl/angle_counter_reg_rep_rep_rep[6]/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/pixel_x_orig_reg_reg[1]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -17.572 ns between Inst_vga_ctrl/angle_counter_reg_rep_rep_rep[6]_replica/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/pixel_x_orig_reg_reg[0]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#3 Warning
 Large setup violation  
-There is a large setup violation of -17.740 ns between Inst_vga_ctrl/angle_counter_reg_rep_rep_rep[6]/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/pixel_x_orig_reg_reg[0]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -17.726 ns between Inst_vga_ctrl/angle_counter_reg_rep_rep_rep[6]_replica/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/pixel_x_orig_reg_reg[2]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#4 Warning
 Large setup violation  
-There is a large setup violation of -17.900 ns between Inst_vga_ctrl/angle_counter_reg_rep[3]/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/pixel_y_orig_reg_reg[1]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -17.918 ns between Inst_vga_ctrl/angle_counter_reg_rep[2]/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/pixel_y_orig_reg_reg[0]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#5 Warning
 Large setup violation  
-There is a large setup violation of -18.189 ns between Inst_vga_ctrl/angle_counter_reg_rep[3]/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/pixel_y_orig_reg_reg[2]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -17.958 ns between Inst_vga_ctrl/angle_counter_reg_rep[2]/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/pixel_y_orig_reg_reg[2]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#6 Warning
 Large setup violation  
-There is a large setup violation of -18.206 ns between Inst_vga_ctrl/angle_counter_reg_rep[3]/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/pixel_y_orig_reg_reg[0]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -17.980 ns between Inst_vga_ctrl/angle_counter_reg_rep[2]/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/pixel_y_orig_reg_reg[1]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#7 Warning
 Large setup violation  
-There is a large setup violation of -2.954 ns between Inst_vga_ctrl/h_cntr_reg_dly_reg[4]/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/vga_blue_reg_reg[3]_lopt_replica_2/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -2.195 ns between Inst_vga_ctrl/h_cntr_reg_dly_reg[1]/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/vga_blue_reg_reg[3]_lopt_replica_2/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#8 Warning
 Large setup violation  
-There is a large setup violation of -2.955 ns between Inst_vga_ctrl/h_cntr_reg_dly_reg[4]/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/vga_blue_reg_reg[3]_lopt_replica/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -2.234 ns between Inst_vga_ctrl/h_cntr_reg_dly_reg[1]/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/vga_green_reg_reg[3]_lopt_replica/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#9 Warning
 Large setup violation  
-There is a large setup violation of -2.957 ns between Inst_vga_ctrl/h_cntr_reg_dly_reg[4]/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/vga_blue_reg_reg[3]_lopt_replica_3/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -2.259 ns between Inst_vga_ctrl/h_cntr_reg_dly_reg[1]/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/vga_blue_reg_reg[3]_lopt_replica_3/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#10 Warning
 Large setup violation  
-There is a large setup violation of -2.960 ns between Inst_vga_ctrl/h_cntr_reg_dly_reg[4]/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/vga_blue_reg_reg[3]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -2.280 ns between Inst_vga_ctrl/h_cntr_reg_dly_reg[1]/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/vga_green_reg_reg[3]_lopt_replica_2/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#11 Warning
 Large setup violation  
-There is a large setup violation of -2.972 ns between Inst_vga_ctrl/h_cntr_reg_dly_reg[4]/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/vga_red_reg_reg[3]_lopt_replica/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -2.315 ns between Inst_vga_ctrl/h_cntr_reg_dly_reg[1]/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/vga_green_reg_reg[3]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#12 Warning
 Large setup violation  
-There is a large setup violation of -2.972 ns between Inst_vga_ctrl/h_cntr_reg_dly_reg[4]/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/vga_red_reg_reg[3]_lopt_replica_3/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -2.346 ns between Inst_vga_ctrl/h_cntr_reg_dly_reg[1]/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/vga_blue_reg_reg[3]_lopt_replica/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#13 Warning
 Large setup violation  
-There is a large setup violation of -2.991 ns between Inst_vga_ctrl/h_cntr_reg_dly_reg[4]/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/vga_red_reg_reg[3]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -2.370 ns between Inst_vga_ctrl/h_cntr_reg_dly_reg[1]/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/vga_green_reg_reg[3]_lopt_replica_3/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#14 Warning
 Large setup violation  
-There is a large setup violation of -2.992 ns between Inst_vga_ctrl/h_cntr_reg_dly_reg[4]/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/vga_green_reg_reg[3]_lopt_replica_2/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -2.396 ns between Inst_vga_ctrl/h_cntr_reg_dly_reg[1]/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/vga_blue_reg_reg[3]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#15 Warning
 Large setup violation  
-There is a large setup violation of -2.997 ns between Inst_vga_ctrl/h_cntr_reg_dly_reg[4]/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/vga_red_reg_reg[3]_lopt_replica_2/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -2.481 ns between Inst_vga_ctrl/h_cntr_reg_dly_reg[1]/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/vga_red_reg_reg[3]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#16 Warning
 Large setup violation  
-There is a large setup violation of -20.262 ns between Inst_vga_ctrl/angle_counter_reg_rep_rep_rep[6]/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/char_index_reg_reg[0]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -2.528 ns between Inst_vga_ctrl/h_cntr_reg_dly_reg[1]/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/vga_red_reg_reg[3]_lopt_replica_3/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#17 Warning
 Large setup violation  
-There is a large setup violation of -21.930 ns between Inst_vga_ctrl/angle_counter_reg_rep_rep_rep[6]/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/char_index_reg_reg[1]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -2.539 ns between Inst_vga_ctrl/h_cntr_reg_dly_reg[1]/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/vga_red_reg_reg[3]_lopt_replica_2/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#18 Warning
 Large setup violation  
-There is a large setup violation of -22.111 ns between Inst_vga_ctrl/angle_counter_reg_rep_rep_rep[6]/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/char_index_reg_reg[3]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -2.564 ns between Inst_vga_ctrl/h_cntr_reg_dly_reg[1]/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/vga_red_reg_reg[3]_lopt_replica/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#19 Warning
 Large setup violation  
-There is a large setup violation of -22.177 ns between Inst_vga_ctrl/angle_counter_reg_rep_rep_rep[6]/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/char_index_reg_reg[2]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -20.184 ns between Inst_vga_ctrl/angle_counter_reg_rep_rep_rep[6]_replica/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/char_index_reg_reg[0]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#20 Warning
 Large setup violation  
-There is a large setup violation of -24.152 ns between Inst_vga_ctrl/angle_counter_reg_rep_rep_rep[6]/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/char_index_reg_reg[0]/CE (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -20.975 ns between Inst_vga_ctrl/angle_counter_reg_rep_rep_rep[6]_replica/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/char_index_reg_reg[1]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#21 Warning
 Large setup violation  
-There is a large setup violation of -24.152 ns between Inst_vga_ctrl/angle_counter_reg_rep_rep_rep[6]/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/char_index_reg_reg[1]/CE (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -21.282 ns between Inst_vga_ctrl/angle_counter_reg_rep_rep_rep[6]_replica/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/char_index_reg_reg[2]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#22 Warning
 Large setup violation  
-There is a large setup violation of -24.152 ns between Inst_vga_ctrl/angle_counter_reg_rep_rep_rep[6]/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/char_index_reg_reg[2]/CE (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -21.880 ns between Inst_vga_ctrl/angle_counter_reg_rep_rep_rep[6]_replica/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/char_index_reg_reg[3]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#23 Warning
 Large setup violation  
-There is a large setup violation of -24.152 ns between Inst_vga_ctrl/angle_counter_reg_rep_rep_rep[6]/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/char_index_reg_reg[3]/CE (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -23.825 ns between Inst_vga_ctrl/angle_counter_reg_rep_rep_rep[6]_replica/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/char_index_reg_reg[0]/CE (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#24 Warning
 Large setup violation  
-There is a large setup violation of -3.007 ns between Inst_vga_ctrl/h_cntr_reg_dly_reg[4]/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/vga_green_reg_reg[3]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -23.825 ns between Inst_vga_ctrl/angle_counter_reg_rep_rep_rep[6]_replica/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/char_index_reg_reg[1]/CE (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#25 Warning
 Large setup violation  
-There is a large setup violation of -3.140 ns between Inst_vga_ctrl/h_cntr_reg_dly_reg[4]/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/vga_green_reg_reg[3]_lopt_replica_3/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -23.825 ns between Inst_vga_ctrl/angle_counter_reg_rep_rep_rep[6]_replica/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/char_index_reg_reg[2]/CE (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#26 Warning
 Large setup violation  
-There is a large setup violation of -3.159 ns between Inst_vga_ctrl/h_cntr_reg_dly_reg[4]/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/vga_green_reg_reg[3]_lopt_replica/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -23.825 ns between Inst_vga_ctrl/angle_counter_reg_rep_rep_rep[6]_replica/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/char_index_reg_reg[3]/CE (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#27 Warning
 Large setup violation  
-There is a large setup violation of -7.177 ns between Inst_vga_ctrl/angle_counter_reg_rep[3]/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/is_in_text_area_reg_reg/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.845 ns between Inst_vga_ctrl/angle_counter_reg_rep_rep_rep[6]_replica/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/is_in_text_area_reg_reg/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#28 Warning
 Large setup violation  
-There is a large setup violation of -7.278 ns between Inst_vga_ctrl/angle_counter_reg_rep[3]/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/pixel_x_orig_reg_reg[0]/CE (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.938 ns between Inst_vga_ctrl/angle_counter_reg_rep_rep_rep[6]_replica/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/pixel_x_orig_reg_reg[0]/CE (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#29 Warning
 Large setup violation  
-There is a large setup violation of -7.278 ns between Inst_vga_ctrl/angle_counter_reg_rep[3]/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/pixel_x_orig_reg_reg[2]/CE (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -6.974 ns between Inst_vga_ctrl/angle_counter_reg_rep_rep_rep[6]_replica/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/pixel_x_orig_reg_reg[2]/CE (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#30 Warning
 Large setup violation  
-There is a large setup violation of -7.286 ns between Inst_vga_ctrl/angle_counter_reg_rep[3]/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/pixel_x_orig_reg_reg[1]/CE (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -7.010 ns between Inst_vga_ctrl/angle_counter_reg_rep_rep_rep[6]_replica/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/pixel_x_orig_reg_reg[1]/CE (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#31 Warning
 Large setup violation  
-There is a large setup violation of -7.466 ns between Inst_vga_ctrl/angle_counter_reg_rep[3]/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/pixel_y_orig_reg_reg[0]/CE (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -7.384 ns between Inst_vga_ctrl/angle_counter_reg_rep_rep_rep[6]_replica/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/pixel_y_orig_reg_reg[2]/CE (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#32 Warning
 Large setup violation  
-There is a large setup violation of -7.466 ns between Inst_vga_ctrl/angle_counter_reg_rep[3]/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/pixel_y_orig_reg_reg[1]/CE (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -7.386 ns between Inst_vga_ctrl/angle_counter_reg_rep_rep_rep[6]_replica/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/pixel_y_orig_reg_reg[0]/CE (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#33 Warning
 Large setup violation  
-There is a large setup violation of -7.609 ns between Inst_vga_ctrl/angle_counter_reg_rep[3]/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/pixel_y_orig_reg_reg[2]/CE (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -7.386 ns between Inst_vga_ctrl/angle_counter_reg_rep_rep_rep[6]_replica/C (clocked by clk_out1_clk_wiz_0) and Inst_vga_ctrl/pixel_y_orig_reg_reg[1]/CE (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-18#1 Warning

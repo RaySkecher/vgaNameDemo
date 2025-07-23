@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
-| Date         : Wed Jul 23 13:30:20 2025
+| Date         : Wed Jul 23 13:38:58 2025
 | Host         : zx970 running 64-bit Ubuntu 22.04.5 LTS
 | Command      : report_utilization -file GPIO_demo_utilization_synth.rpt -pb GPIO_demo_utilization_synth.pb
 | Design       : GPIO_demo
@@ -37,7 +37,7 @@ Table of Contents
 | Slice Registers         |  325 |     0 |          0 |     41600 |  0.78 |
 |   Register as Flip Flop |  325 |     0 |          0 |     41600 |  0.78 |
 |   Register as Latch     |    0 |     0 |          0 |     41600 |  0.00 |
-| F7 Muxes                |   15 |     0 |          0 |     16300 |  0.09 |
+| F7 Muxes                |   16 |     0 |          0 |     16300 |  0.10 |
 | F8 Muxes                |    5 |     0 |          0 |      8150 |  0.06 |
 +-------------------------+------+-------+------------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
@@ -156,13 +156,13 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | FDRE       |  323 |        Flop & Latch |
 | CARRY4     |  313 |          CarryLogic |
 | LUT2       |  309 |                 LUT |
-| LUT4       |  276 |                 LUT |
-| LUT3       |  262 |                 LUT |
+| LUT4       |  275 |                 LUT |
+| LUT3       |  263 |                 LUT |
 | LUT5       |  136 |                 LUT |
 | LUT1       |  113 |                 LUT |
 | OBUF       |   43 |                  IO |
 | IBUF       |   22 |                  IO |
-| MUXF7      |   15 |               MuxFx |
+| MUXF7      |   16 |               MuxFx |
 | MUXF8      |    5 |               MuxFx |
 | BUFG       |    3 |               Clock |
 | FDSE       |    2 |        Flop & Latch |

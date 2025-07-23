@@ -1,75 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1753302563">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1753303079">
   <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
   <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-RQS" Name="GPIO_demo_postroute_physopted.rqs"/>
   <File Type="ROUTE-RQS" Name="GPIO_demo_routed.rqs"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="RDI-RDI" Name="GPIO_demo.vdi"/>
+  <File Type="BG-DRC" Name="GPIO_demo.drc"/>
+  <File Type="BG-BGN" Name="GPIO_demo.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="GPIO_demo.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="GPIO_demo.ltx"/>
   <File Type="RBD_FILE" Name="GPIO_demo.rbd"/>
   <File Type="NPI_FILE" Name="GPIO_demo.npi"/>
   <File Type="RNPI_FILE" Name="GPIO_demo.rnpi"/>
+  <File Type="CFI_FILE" Name="GPIO_demo.cfi"/>
+  <File Type="RCFI_FILE" Name="GPIO_demo.rcfi"/>
+  <File Type="PL-PDI-FILE" Name="GPIO_demo_pld.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="GPIO_demo_boot.pdi"/>
+  <File Type="PDI-FILE" Name="GPIO_demo.pdi"/>
+  <File Type="BITSTR-MMI" Name="GPIO_demo.mmi"/>
+  <File Type="BITSTR-BMM" Name="GPIO_demo_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="GPIO_demo.nky"/>
+  <File Type="BITSTR-RBT" Name="GPIO_demo.rbt"/>
+  <File Type="BITSTR-MSK" Name="GPIO_demo.msk"/>
+  <File Type="BG-BIN" Name="GPIO_demo.bin"/>
+  <File Type="BG-BIT" Name="GPIO_demo.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="GPIO_demo_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="GPIO_demo_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="GPIO_demo_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="GPIO_demo_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="GPIO_demo_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="GPIO_demo_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="GPIO_demo_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="GPIO_demo_postroute_physopt.dcp"/>
+  <File Type="ROUTE-RQS-PB" Name="GPIO_demo_rqs_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="GPIO_demo_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="GPIO_demo_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW" Name="GPIO_demo_bus_skew_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="GPIO_demo_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-SIMILARITY" Name="GPIO_demo_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="GPIO_demo_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="GPIO_demo_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="GPIO_demo_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="GPIO_demo_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="GPIO_demo_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="GPIO_demo_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="GPIO_demo_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="GPIO_demo_power_routed.rpt"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="GPIO_demo_methodology_drc_routed.pb"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="GPIO_demo_methodology_drc_routed.rpx"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="GPIO_demo_methodology_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-RPX" Name="GPIO_demo_drc_routed.rpx"/>
-  <File Type="ROUTE-PWR-RPX" Name="GPIO_demo_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="GPIO_demo_route_status.rpt"/>
-  <File Type="ROUTE-TIMING-RPX" Name="GPIO_demo_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="GPIO_demo_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-PWR-SUM" Name="GPIO_demo_power_summary_routed.pb"/>
-  <File Type="ROUTE-PWR" Name="GPIO_demo_power_routed.rpt"/>
-  <File Type="OPT-DRC" Name="GPIO_demo_drc_opted.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="GPIO_demo_route_status.pb"/>
-  <File Type="ROUTE-DRC" Name="GPIO_demo_drc_routed.rpt"/>
-  <File Type="PLACE-UTIL" Name="GPIO_demo_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="GPIO_demo_utilization_placed.pb"/>
-  <File Type="PLACE-IO" Name="GPIO_demo_io_placed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="GPIO_demo_drc_routed.pb"/>
-  <File Type="OPT-HWDEF" Name="GPIO_demo.hwdef"/>
-  <File Type="PLACE-CTRL" Name="GPIO_demo_control_sets_placed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="GPIO_demo_bus_skew_routed.rpx"/>
-  <File Type="REPORTS-TCL" Name="GPIO_demo_reports.tcl"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="GPIO_demo_bus_skew_routed.pb"/>
-  <File Type="PA-TCL" Name="GPIO_demo.tcl"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="GPIO_demo_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="GPIO_demo_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="GPIO_demo_timing_summary_postroute_physopted.pb"/>
-  <File Type="RDI-RDI" Name="GPIO_demo.vdi"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="GPIO_demo_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="GPIO_demo_bus_skew_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="GPIO_demo_bus_skew_postroute_physopted.pb"/>
-  <File Type="BG-BIT" Name="GPIO_demo.bit"/>
-  <File Type="PDI-FILE" Name="GPIO_demo.pdi"/>
-  <File Type="BG-DRC" Name="GPIO_demo.drc"/>
-  <File Type="BG-BGN" Name="GPIO_demo.bgn"/>
-  <File Type="RCFI_FILE" Name="GPIO_demo.rcfi"/>
-  <File Type="BG-BIN" Name="GPIO_demo.bin"/>
-  <File Type="CFI_FILE" Name="GPIO_demo.cfi"/>
-  <File Type="BITSTR-MSK" Name="GPIO_demo.msk"/>
-  <File Type="BITSTR-RBT" Name="GPIO_demo.rbt"/>
-  <File Type="BITSTR-NKY" Name="GPIO_demo.nky"/>
-  <File Type="BITSTR-BMM" Name="GPIO_demo_bd.bmm"/>
-  <File Type="BITSTR-MMI" Name="GPIO_demo.mmi"/>
-  <File Type="BITSTR-SYSDEF" Name="GPIO_demo.sysdef"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="GPIO_demo.ltx"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="GPIO_demo_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="GPIO_demo_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="GPIO_demo_routed_bb.dcp"/>
   <File Type="ROUTE-DCP" Name="GPIO_demo_routed.dcp"/>
   <File Type="ROUTE-ERROR-DCP" Name="GPIO_demo_routed_error.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="GPIO_demo_routed_bb.dcp"/>
-  <File Type="ROUTE-TIMING-PB" Name="GPIO_demo_timing_summary_routed.pb"/>
-  <File Type="OPT-DCP" Name="GPIO_demo_opt.dcp"/>
-  <File Type="PLACE-DCP" Name="GPIO_demo_placed.dcp"/>
-  <File Type="PWROPT-DCP" Name="GPIO_demo_pwropt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="GPIO_demo_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="GPIO_demo_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="GPIO_demo_drc_physopted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="GPIO_demo_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="GPIO_demo_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="GPIO_demo_postroute_physopt_bb.dcp"/>
-  <File Type="BOOT-PDI-FILE" Name="GPIO_demo_boot.pdi"/>
-  <File Type="PL-PDI-FILE" Name="GPIO_demo_pld.pdi"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="GPIO_demo_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="GPIO_demo_postplace_pwropt.dcp"/>
+  <File Type="PLACE-RQA-PB" Name="GPIO_demo_rqa_placed.pb"/>
+  <File Type="PLACE-TIMING" Name="GPIO_demo_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="GPIO_demo_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="GPIO_demo_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="GPIO_demo_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="GPIO_demo_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="GPIO_demo_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="GPIO_demo_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="GPIO_demo_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="GPIO_demo_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="GPIO_demo_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="GPIO_demo_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="GPIO_demo_pwropt.dcp"/>
+  <File Type="OPT-RQA-PB" Name="GPIO_demo_rqa_opted.pb"/>
+  <File Type="OPT-TIMING" Name="GPIO_demo_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="GPIO_demo.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="GPIO_demo_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="GPIO_demo_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="GPIO_demo_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="GPIO_demo_timing_summary_init.rpt"/>
+  <File Type="REPORTS-TCL" Name="GPIO_demo_reports.tcl"/>
+  <File Type="PA-TCL" Name="GPIO_demo.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/hdl/UART_TX_CTRL.vhd">
